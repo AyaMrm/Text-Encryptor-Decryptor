@@ -3,6 +3,7 @@ from crypto.ceasar import ceasar_route
 from crypto.vigenere import vigenere_route
 from crypto.playfair import playfair_route
 from crypto.railFence import railFence_route
+from crypto.rc4 import rc4_route
 
 
 app = Flask(__name__)
@@ -10,6 +11,7 @@ ceasar_route(app)
 vigenere_route(app)
 playfair_route(app)
 railFence_route(app)
+rc4_route(app)
 
 @app.route("/")
 def home():
