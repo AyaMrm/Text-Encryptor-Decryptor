@@ -4,7 +4,7 @@ from crypto.vigenere import vigenere_route
 from crypto.playfair import playfair_route
 from crypto.railFence import railFence_route
 from crypto.rc4 import rc4_route
-#from crypto.aes import aes_route
+from crypto.aes import aes_route
 from crypto.des import des_route
 from crypto.rsa import rsa_route
 
@@ -15,7 +15,7 @@ vigenere_route(app)
 playfair_route(app)
 railFence_route(app)
 rc4_route(app)
-#aes_route(app)
+aes_route(app)
 des_route(app)
 rsa_route(app)
 
